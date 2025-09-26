@@ -13,12 +13,12 @@ export function Ex2() {
     const isTeen = people=> people.filter(person => person.age >= 13 && person.age <= 19);
         return (
         <div>
-            
+            <ul>
                 <h3> in ra các phần tử trong mảng   </h3>
             {intArray.map((num, index) => (
                 <p key={index}>{num}</p>
             ))}
-            
+            </ul>
             <ul><h3> tổng các phần tử trong mảng  : <strong>{sum}</strong> </h3></ul>
             <ul><h3> Số lượng các phần tử trong mảng : {intArray.length} </h3></ul>
             <ul>
@@ -36,6 +36,7 @@ export function Ex2() {
             {isTeen(people).length}
             <h3> tuổi trung bình trong people </h3>
             { (people.reduce((acc, person) => acc + person.age, 0) / people.length).toFixed(2)}
+            
             </ul>
         </div>
         );
