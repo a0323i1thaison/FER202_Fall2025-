@@ -15,12 +15,32 @@ export function Ex6() {
   const companiesSortedByEnd = [...companies].sort((a, b) => a.end - b.end);
   // lấy top 3
   const top3 = companiesSortedByEnd.slice(0, 3);
-
+  // lấy các công ty finance và technology
+  const filteredCompanies = companies.filter(company => company.category === 'Finance' || company.category === 'Technology');
+  // sắp xếp theo năm giảm dần 
+  filteredCompanies.sort((a, b) => b.start - a.start);
   return (
     <div>
         <h2>
         6. Sort + Slice – Top 3 doanh nghiệp theo năm kết thúc sớm nhất
       </h2>
+      <ul> 
+        <h3>sắp xếp theo thời gian giảm dần </h3>
+        {companiesSortedByEnd.map((c) => (
+          <li key={c.name}>
+            <span>{c.name}</span> – {c.category} (
+            {c.start} → {c.end})
+          </li>
+        ))}
+         </ul>
+      <ul><h3>các công ty finance và teachnology </h3> 
+        {filteredCompanies.map((c) => ( 
+          <li key={c.name}>
+            <span>{c.name}</span> – {c.category} (
+            {c.start} → {c.end})
+          </li>
+        ))}
+         </ul>
       <ul className="list-disc pl-6">
         {top3.map((c) => (
           <li key={c.name}>

@@ -9,6 +9,10 @@ export function Ex2() {
         { id: 5 ,name: 'Eve', age: 16 },
       
     ];
+    // tên giảm dần
+    const sortedNamesDesc = [...nameArray].sort((a, b) => b.localeCompare(a));
+    //lấy người thứ 2 trong danh sách person
+    const secondPerson = people[1];
     const sum = intArray.reduce((acc, curr) => acc + curr, 0);
     const isTeen = people=> people.filter(person => person.age >= 13 && person.age <= 19);
         return (
@@ -18,6 +22,16 @@ export function Ex2() {
             {intArray.map((num, index) => (
                 <p key={index}>{num}</p>
             ))}
+            </ul>
+            <h4> danh sách tên giảm dần </h4>
+            {sortedNamesDesc.map((name, index) => (
+                <p key={index}>{name}</p>
+            ))}
+            <ul>
+                <h3> in ra người thứ 2 </h3>
+                <p>{secondPerson.name} - {secondPerson.age}</p>
+                <h3>kiểm tra xem có phải isteen không </h3>
+                <p>{secondPerson.age >=13 && secondPerson.age <=19 ? 'isTeen' : 'not isTeen'}</p>
             </ul>
             <ul><h3> tổng các phần tử trong mảng  : <strong>{sum}</strong> </h3></ul>
             <ul><h3> Số lượng các phần tử trong mảng : {intArray.length} </h3></ul>
