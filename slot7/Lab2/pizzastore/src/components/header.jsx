@@ -11,7 +11,7 @@ export default function Header() {
       </nav>
       <div className="search">
         <input type="text" placeholder="Search" />
-        <button>🔍</button>
+        <button >🔍</button>
       </div>
     </header>
   );
