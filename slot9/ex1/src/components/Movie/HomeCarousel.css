@@ -1,0 +1,57 @@
+/* 🎞 HomeCarousel.css */
+.carousel-item img {
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  object-fit: cover;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+}
+
+/* Caption đẹp, căn đều 2 bên, dễ đọc */
+.carousel-caption {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 3rem;
+  right: 3rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  max-width: 780px;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Màu badge đồng đều hơn */
+.badge-info {
+  background: linear-gradient(45deg, #56ccf2, #2f80ed) !important;
+  color: #fff !important;
+}
+
+.badge-secondary {
+  background: #7b7b7b !important;
+  color: #fff !important;
+}
+.badge-warning {
+  background: #f2994a !important;
+  color: #fff !important;
+}

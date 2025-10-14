@@ -1,4 +1,5 @@
 import  Button from "react-bootstrap/Button";
+import "./Footer.css";
 
 function MyFooter() {
   const author = "Sơn Design";

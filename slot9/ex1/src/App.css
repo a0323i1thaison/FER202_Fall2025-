@@ -1,38 +1,127 @@
+/* Đặt lại style mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font và nền tổng thể */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117; /* nền tối sang trọng */
+  color: #e6edf3;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* App tổng thể */
 .App {
   text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 25px 25px;
 }
 
+.App-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00b4d8;
+  margin-bottom: 15px;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+  color: #b0b7c3;
+  max-width: 600px;
+}
+
+/* Logo animation (nếu vẫn muốn giữ) */
+.App-logo {
+  height: 150px;
+  margin-bottom: 20px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/* Liên kết */
 .App-link {
-  color: #61dafb;
+  color: #00b4d8;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+.App-link:hover {
+  color: #90e0ef;
+}
+
+/* Section phim */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #94a3b8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #64748b;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+}
+
+/* Hiệu ứng mượt */
+.card,
+button,
+img,
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover nhẹ */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Keyframes giữ lại logo xoay */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .App-header p {
+    font-size: 1rem;
   }
 }
