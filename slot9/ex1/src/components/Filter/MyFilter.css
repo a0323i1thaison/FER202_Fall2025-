@@ -1,0 +1,92 @@
+/* ====== CARD TỔNG THỂ ====== */
+.card {
+  background-color: #1c1c1c; /* Nền tối để đồng bộ với Navbar */
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 209, 255, 0.2);
+}
+
+/* ====== HEADER ====== */
+.card-header {
+  background-color: #121212;
+  color: #00d1ff;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ====== FORM LABELS ====== */
+.form-label {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* ====== FORM CONTROL ====== */
+.form-control,
+.form-select {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #00d1ff;
+  box-shadow: 0 0 6px rgba(0, 209, 255, 0.4);
+  background-color: #1a1a1a;
+}
+
+/* Placeholder text */
+.form-control::placeholder {
+  color: #aaa;
+}
+
+/* ====== BUTTON ====== */
+.btn-primary {
+  background-color: #00d1ff;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #33e0ff;
+  transform: translateY(-2px);
+  color: #000;
+}
+
+.btn-primary:active {
+  background-color: #00b8e6;
+  transform: translateY(0);
+}
+
+/* ====== CARD BODY SPACING ====== */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}

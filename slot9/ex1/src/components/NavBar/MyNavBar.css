@@ -1,0 +1,104 @@
+/* Tổng thể Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Khi scroll xuống, Navbar tối hơn */
+.navbar.scrolled {
+  background-color: #121212 !important;
+}
+
+/* Logo MovieApp */
+.navbar-brand {
+  font-weight: 700;
+  color: #00d1ff !important;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #66e0ff !important;
+}
+
+/* Các link trong navbar */
+.nav-link {
+  color: #ddd !important;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #00d1ff !important;
+  transform: translateY(-2px);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.dropdown-item {
+  color: #ccc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #00d1ff;
+  color: #000;
+}
+
+/* Form tìm kiếm */
+.form-control {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #00d1ff;
+  box-shadow: 0 0 5px #00d1ff;
+}
+
+/* Nút Search */
+.btn-outline-info {
+  border-color: #00d1ff;
+  color: #00d1ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-info:hover {
+  background-color: #00d1ff;
+  color: #000;
+}
+
+/* Căn chỉnh icon trong nav */
+.nav-link i {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+/* Điều chỉnh bố cục icons cuối navbar */
+.navbar .d-flex.align-items-center {
+  gap: 10px;
+}
+
+/* Responsive nhỏ hơn 992px */
+@media (max-width: 992px) {
+  .navbar .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar .btn-outline-info {
+    width: 100%;
+  }
+
+  .navbar .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,7 +1,8 @@
-// src/components/NavBar/MyNavBar.jsx
+
 import React from 'react';
 import { Navbar, Container, Nav, Form, Button, InputGroup, Dropdown } from 'react-bootstrap';
-// Sử dụng Bootstrap Icons với class name: bi bi-ten-icon-name
+import './MyNavBar.css'; 
+
 
 const MyNavBar = () => {
   return (

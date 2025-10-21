@@ -1,6 +1,8 @@
 // src/components/Filter/Filter.jsx
 import React from 'react';
 import { Card, Form, Button } from 'react-bootstrap';
+import './MyFilter.css';
+
 
 const Filter = () => {
   return (

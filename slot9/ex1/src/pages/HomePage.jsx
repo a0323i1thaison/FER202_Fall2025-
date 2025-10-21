@@ -1,20 +1,18 @@
-// src/pages/HomePage.jsx
+
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
-// Import components và dữ liệu theo cấu trúc file mới nhất
 import MyNavBar from '../components/NavBar/MyNavBar';
 import MyFooter from '../components/Footer/MyFooter';
 import MyFilter from '../components/Filter/MyFilter'; 
 import HomeCarousel from '../components/Movie/HomeCarousel';
 import MovieCard from '../components/Movie/MovieCard'; 
 
-// SỬA LỖI: Dùng đường dẫn ĐÚNG và Named Import
+
 import { movies as moviesData } from '../components/data/movies'; 
 
 const HomePage = () => {
-    // Chỉ lấy 3 phim đầu tiên để hiển thị (như trong ảnh mẫu)
+    
     const moviesToShow = moviesData.slice(0, 3); 
 
     return (
@@ -23,12 +21,12 @@ const HomePage = () => {
             
             <Container fluid className="mt-4">
                 <Row>
-                    {/* CỘT LỌC (SIDEBAR) */}
+                    {}
                     <Col md={3} className="px-4">
                         <MyFilter />
                     </Col>
                     
-                    {/* CỘT NỘI DUNG CHÍNH (Movie Collection) */}
+                    {}
                     <Col md={9}>
                         <h2 className="mb-4 text-center">
                             <i className="bi bi-film me-2"></i> Movie Collection
